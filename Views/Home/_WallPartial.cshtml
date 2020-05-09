@@ -1,0 +1,11 @@
+@model Message
+
+
+<form asp-action="Make_Message" method="post" casss="col-5">
+    <div class="form-group">
+    <span asp-validation-for="MesContent"></span>
+    <label asp-for="MesContent">Message</label>
+    <input asp-for="MesContent" class="form-control">
+    </div>
+    <input type="submit" value="Post Message" class="btn-danger">
+</form>
